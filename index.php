@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
 
-    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.css">
 
     <script src="./src/js/bootstrap.js"></script>
 
@@ -32,7 +32,7 @@
                 <div class="text-end">
                     <!-- Boton modal Login -->
                     <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#staticBackdropLogin">
-                    Login
+                        Login
                     </button>
 
                     <!-- Modal Login -->
@@ -47,27 +47,27 @@
                                 <div class="modal-body">
                                     <div class="form-signin w-100 m-auto">
                                         <form>
-                                        <div style="text-align: left;">
-                                            <p style="margin: 1rem;">Email</p>
-                                        </div>
-                                        <div class="form-floating">
-                                        <input type="email" class="form-control" id="floatingInputLogin" placeholder="name@example.com">
-                                        <label for="floatingInputLogin">Email@dominio.com</label>
-                                        </div>
-                                        <div style="text-align: left;">
-                                            <p style="margin: 1rem;">Contraseña</p>
-                                        </div>
-                                        <div class="form-floating">
-                                        <input type="password" class="form-control" id="floatingPasswordLogin" placeholder="Password">
-                                        <label for="floatingPasswordLogin">Contraseña</label>
-                                        </div>
+                                            <div style="text-align: left;">
+                                                <p style="margin: 1rem;">Email</p>
+                                            </div>
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" id="floatingInputLogin" placeholder="name@example.com">
+                                                <label for="floatingInputLogin">Email@dominio.com</label>
+                                            </div>
+                                            <div style="text-align: left;">
+                                                <p style="margin: 1rem;">Contraseña</p>
+                                            </div>
+                                            <div class="form-floating">
+                                                <input type="password" class="form-control" id="floatingPasswordLogin" placeholder="Password">
+                                                <label for="floatingPasswordLogin">Contraseña</label>
+                                            </div>
 
-                                        <div class="form-check text-start my-3">
-                                        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefaultLogin">
-                                        <label class="form-check-label" for="flexCheckDefaultLogin">
-                                            Recordarme
-                                        </label>
-                                        </div>
+                                            <div class="form-check text-start my-3">
+                                                <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefaultLogin">
+                                                <label class="form-check-label" for="flexCheckDefaultLogin">
+                                                    Recordarme
+                                                </label>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@
 
                     <!-- Boton modal Register -->
                     <button type="button" class="btn  btn-warning me-2" data-bs-toggle="modal" data-bs-target="#staticBackdropRegister">
-                    Registrarse
+                        Registrarse
                     </button>
 
                     <!-- Modal Register -->
@@ -99,26 +99,26 @@
                                         <form>
                                             <div style="text-align: left;">
                                                 <p style="margin: 1rem;">Email</p>
-                                                </div>
-                                                <div class="form-floating">
+                                            </div>
+                                            <div class="form-floating">
                                                 <input type="email" class="form-control" id="floatingInputRegister" placeholder="name@example.com">
                                                 <label for="floatingInputRegister">Email@dominio.com</label>
-                                                </div>
-                                                <div style="text-align: left;">
-                                                 <p style="margin: 1rem;">Contraseña</p>
-                                                 </div>
-                                                <div class="form-floating">
+                                            </div>
+                                            <div style="text-align: left;">
+                                                <p style="margin: 1rem;">Contraseña</p>
+                                            </div>
+                                            <div class="form-floating">
                                                 <input type="password" class="form-control" id="floatingPasswordRegister" placeholder="Password">
                                                 <label for="floatingPasswordRegister">Contraseña</label>
-                                                </div>
-                                                <div style="text-align: left;">
-                                                 <p style="margin: 1rem;">Repita su contraseña</p>
-                                              </div>
-                                                <div class="form-floating">
+                                            </div>
+                                            <div style="text-align: left;">
+                                                <p style="margin: 1rem;">Repita su contraseña</p>
+                                            </div>
+                                            <div class="form-floating">
                                                 <input type="password" class="form-control" id="floatingPasswordCheck" placeholder="Password">
-                                                </div>
+                                            </div>
 
-                                                <div class="form-check text-start my-3">
+                                            <div class="form-check text-start my-3">
                                                 <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefaultRegister">
                                                 <label class="form-check-label" for="flexCheckDefaultRegister">
                                                     Acepto los terminos y condiciones
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </div>
-    </header>   
+    </header>
 
 
 
@@ -160,7 +160,7 @@
             );
 
             foreach ($carruselItems as $index => $item) {
-            ?>
+                ?>
                 <div class="carousel-item <?php echo ($index === 0 ? "active" : ""); ?>">
                     <img class="bd-placeholder-img" src="src/img/artista.png" height="100%" width="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <div class="container">
@@ -186,35 +186,35 @@
         <br></br>
     </div>
     <div class="row align-items-center justify-content-center">
-    <?php
-    $noticias = array(
-        array("title" => "Noticia 1", "content" => "Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1"),
-        array("title" => "Noticia 2", "content" => "Contenido de la Noticia 2Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1"),
-    );
+        <?php
+        $noticias = array(
+            array("title" => "Noticia 1", "content" => "Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1"),
+            array("title" => "Noticia 2", "content" => "Contenido de la Noticia 2Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1"),
+        );
 
-    foreach ($noticias as $index => $noticia) {
-    ?>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title"><?php echo $noticia['title']; ?></h5>
-                    <p class="card-text"><?php echo $noticia['content']; ?></p>
+        foreach ($noticias as $index => $noticia) {
+            ?>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $noticia['title']; ?></h5>
+                        <p class="card-text"><?php echo $noticia['content']; ?></p>
+                    </div>
                 </div>
             </div>
+        <?php } ?>
+        <div>
+            <br></br>
         </div>
-    <?php } ?>
-    <div>
-        <br></br>
     </div>
-</div>
 
-<script>
-    $(document).ready(function() {
-        $('myCarousel').carousel({
-            interval: 4000
+    <script>
+        $(document).ready(function() {
+            $('myCarousel').carousel({
+                interval: 4000
+            });
         });
-    });
-</script>
+    </script>
 
 </main>
 </body>
