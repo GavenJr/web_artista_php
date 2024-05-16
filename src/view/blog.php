@@ -67,7 +67,7 @@
       {
         echo "<center><span>No Blog Posts Found</span></center>";
       
-        // echo "<center><a style='color: dodgerblue;' href='blog_post.php'>Write a New Post</a></center>";
+        // echo "<center><a style='color: dodgerblue;' href='./blog_post.php'>Write a New Post</a></center>";
       }
 
       $conn->close();
@@ -76,7 +76,7 @@
 
     </div>
 
-    <?php echo "<br><center><a style='color: dodgerblue; text-decoration: none; background: dodgerblue; padding: 5px 25px; color: #fff; border-radius: 50px;' href='blog_post.php'>Write a New Post</a></center><br>"; ?>
+    <?php echo "<br><center><a style='color: dodgerblue; text-decoration: none; background: dodgerblue; padding: 5px 25px; color: #fff; border-radius: 50px;' href='./blog_post.php'>Write a New Post</a></center><br>"; ?>
 
   </body>
   

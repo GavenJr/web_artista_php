@@ -2,25 +2,13 @@
 
 // error_reporting(0);
 
-$servername = "localhost";
-
-$username = "root";
-
-$password = "";
-
-$database = "blog_db"; 
+include("db_config.php");
 
 $blogTitle = $_POST["blogtitle"];
 
 $blogDate = $_POST["blogdate"];
 
 $blogPara = $_POST["blogpara"];
-
-// $sql = "insert into blog (titulo, fecha, img_file, parrafo) values ('" . $blogTitle . "', '" . $blogDate . "', '" . $filename . "', '" . $blogPara . "');";
-
-$conn = new mysqli($servername, $username, $password, $database);
-
-if($conn->connect_error) die("Connection to database failed") . $conn->connect_error;
 
 $filename = "NONE";
 
@@ -67,11 +55,15 @@ $conn->close();
 
   <body>
 
+  <?php include '../view/global/header_1.php';?>
+    <h1>Blog</h1>
+    <?php include '../view/global/header_2.php';?>
+
     <div class="container" style="width: 50%; margin: auto; text-align: justify; font-family: Roboto, sans-serif;">
 
       <h1 style="margin-bottom: 10px; text-align: center;">Post Saved</h1>
 
-      <center><a style="color: dodgerblue;" href="index.php">Go to Home Page</a></center>
+      <center><a style="color: dodgerblue;" href="../../index.php">Go to Home Page</a></center>
       
       <br><br>
 
