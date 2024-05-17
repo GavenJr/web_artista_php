@@ -1,30 +1,40 @@
+<?php
+if (realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"])) {
+    exit;
+}
+
+include "global/menu.php";
+include "global/footer.php";
+include "global/blog_functions.php";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <title>Crear blog</title>
 
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/fontawesome/css/all.min.css">
 
-    <script src="../js/bootstrap.js"></script>
+    <script src="./src/js/bootstrap/bootstrap.js"></script>
+    <script src="./src/js/switch.js"></script>
 
-    <link rel="stylesheet" href="../css/sign-in.css">
-
-    <link rel="stylesheet" href="../css/blog_style.css">
+    <link rel="stylesheet" href="./src/css/sign-in.css">
+    <link rel="stylesheet" href="./src/css/blog_style.css">
 
 </head>
 
   <body>
 
 
-    <?php include '../view/global/header_1.php';?>
-    <h1>Blog</h1>
-    <?php include '../view/global/header_2.php';?>
+  <?php  echo elMenu(); ?>
+  <br>
 
     <div class="writing-section">
 
-      <form action="../php/blog_post_process.php" method="POST" enctype="multipart/form-data">
+      <form action="procesar_blog" method="POST" enctype="multipart/form-data">
 
         <input id="blogTitle" name="blogtitle" type="text" placeholder="Titulo del Blog..." autocomplete="off">
         
@@ -32,7 +42,7 @@
         
         <span id="dateLabel">Fecha: </span>
         <!-- https://sentry.io/answers/how-do-i-get-the-current-date-and-time-in-php/ -->
-        <label for="blogDate">  <?php echo date('d/m/Y H:i')?></label>
+        <label for="blogDate"></label>
         <input id="blogDate" name="blogdate" readonly></input>
         
         <br><br>
@@ -52,11 +62,11 @@
 
       <br>
 
-      <center><a style="text-decoration: none;" href="./blog.php" id="saveBtn">Volver a la pagina de blogs</a></center>
+      <center><a style="text-decoration: none;" href="index" id="saveBtn">Volver a la pagina de blogs</a></center>
       
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="./src/js/blog_script.js"></script>
 
   </body>
   
