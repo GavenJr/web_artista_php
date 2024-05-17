@@ -108,9 +108,9 @@ include "global/menu.php" ?>
             products.forEach(function(product) {
                 var category = product.getAttribute('data-category');
                 if (selectedCategory === '' || selectedCategory === category) {
-                    product.style.display = 'block';
+                    product.parentNode.style.display = 'block';
                 } else {
-                    product.style.display = 'none';
+                    product.parentNode.style.display = 'none';
                 }
             });
         });
