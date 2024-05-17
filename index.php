@@ -1,4 +1,8 @@
-<?php include "./src/view/global/menu.php" ?>
+<?php
+require_once "./src/php/router.php";
+include "./src/view/global/menu.php";
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

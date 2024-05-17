@@ -12,21 +12,22 @@ function elMenu()
                 </button>
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul id="menu-menu-principal" class="navbar-nav me-auto mb-2 mb-md-0 ">
+                        <img src="./src/res/img/icono.png" alt="Bootstrap" width="50" class="me-3">
                         <li
                             class="menu-item">
-                            <a href="/" class="nav-link active">Inicio</a></li>
+                            <a href="index" class="nav-link active">Inicio</a></li>
                         <li
                                 class="menu-item">
-                            <a href="acerca.php" class="nav-link active">Acerca de</a></li>
+                            <a href="acerca" class="nav-link active">Acerca de</a></li>
                         <li
                                 class="menu-item">
-                            <a href="concierto.php" class="nav-link active">Conciertos</a></li>
+                            <a href="concierto" class="nav-link active">Conciertos</a></li>
                         <li
                                 class="menu-item">
-                            <a href="blog.php" class="nav-link active">Blog</a></li>
+                            <a href="blog" class="nav-link active">Blog</a></li>
                         <li
                                 class="menu-item">
-                            <a href="merch.php" class="nav-link active">Merch</a></li>
+                            <a href="merch" class="nav-link active">Merch</a></li>
                     </ul>
                     <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
                         <li class="nav-item col-6 col-lg-auto"><a class="nav-link py-2 px-0 px-lg-2" href="https://www.instagram.com/"

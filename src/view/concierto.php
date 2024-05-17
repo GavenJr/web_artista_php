@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conciertos</title>
 
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/fontawesome/css/all.min.css">
 
-    <script src="../js/bootstrap/bootstrap.js"></script>
-    <script src="../js/switch.js"></script>
+    <script src="./src/js/bootstrap/bootstrap.js"></script>
+    <script src="./src/js/switch.js"></script>
 
 </head>
 <body>
