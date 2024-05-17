@@ -2,6 +2,7 @@
 
 // error_reporting(0);
 
+
 include("db_config.php");
 
 $blogTitle = $_POST["blogtitle"];
@@ -21,7 +22,7 @@ if(isset($_FILES['uploadimage']))
   move_uploaded_file($tempname, "images/" . $GLOBALS['filename']);
 }
 
-$sql = "insert into blog (titulo, fecha, img_file, parrafo) values ('" . $blogTitle . "', '" . $blogDate . "', '" . $filename . "', '" . $blogPara . "');";
+$sql = "insert into blog (titulo, fecha, parrafo) values ('" . $blogTitle . "', '" . $blogDate . "', '" . $blogPara . "');";
 
 if($conn->query($sql) === TRUE)
 {
@@ -47,23 +48,27 @@ $conn->close();
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Post Saved</title>
+    <title>Blog  Guardado</title>
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/fontawesome/css/all.min.css">
+
+    <script src="./src/js/bootstrap/bootstrap.js"></script>
+    <script src="./src/js/switch.js"></script>
+
+    <link rel="stylesheet" href="./src/css/sign-in.css">
+    <link rel="stylesheet" href="./src/css/blog_style.css">
 
   </head>
 
   <body>
 
-  <?php include '../view/global/header_1.php';?>
-    <h1>Blog</h1>
-    <?php include '../view/global/header_2.php';?>
 
     <div class="container" style="width: 50%; margin: auto; text-align: justify; font-family: Roboto, sans-serif;">
 
-      <h1 style="margin-bottom: 10px; text-align: center;">Post Saved</h1>
+      <h1 style="margin-bottom: 10px; text-align: center;">Blog guardado</h1>
 
-      <center><a style="color: dodgerblue;" href="../../index.php">Go to Home Page</a></center>
+      <center><a style="color: dodgerblue;" href="index">Volver a inicio</a></center>
       
       <br><br>
 
