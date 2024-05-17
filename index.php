@@ -43,9 +43,6 @@ include "./src/view/global/footer.php";
     <?php /*include 'header.php';*/?>
   <?php  echo elMenu(); ?>
 
-
-
-
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <?php for ($i = 0; $i < 3; $i++) { ?>
@@ -55,9 +52,9 @@ include "./src/view/global/footer.php";
         <div class="carousel-inner">
             <?php
             $carruselItems = array(
-                array("title" => "Ñublense", "subtitle" => "Alista su concierto para las próximas horas.", "buttonText" => "Ver más"),
-                array("title" => "Ñublense", "subtitle" => "Prepara su nuevo disco.", "buttonText" => "Ver más"),
-                array("title" => "Ñublense", "subtitle" => "Lanza nuevo Merch para la gira.", "buttonText" => "Ver más")
+                array("title" => "Artista", "subtitle" => "Alista su concierto para las próximas horas.", "buttonText" => "Ver más"),
+                array("title" => "Artista", "subtitle" => "Prepara su nuevo disco.", "buttonText" => "Ver más"),
+                array("title" => "Artista", "subtitle" => "Lanza nuevo Merch para la gira.", "buttonText" => "Ver más")
             );
 
             foreach ($carruselItems as $index => $item) {

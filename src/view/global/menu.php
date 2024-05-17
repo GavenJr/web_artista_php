@@ -59,7 +59,7 @@ function elMenu()
                         <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
                         </li>
                     </ul>
-                    <form class="d-flex" role="search" action="/">
+                    <form class="d-flex" role="search" action="home.php">
                         <input class="form-control me-2 search-header" type="search" placeholder="Buscar"
                                aria-label="Search" value="" name="s"
                                title="Buscar:">
