@@ -50,7 +50,7 @@
             <a href="javascript:void(0);" id="scrollTop"><i class="ti-angle-up"></i></a>
          </div>
          <div class="text-center">
-            <p class="content">&copy; 2020 - Design &amp; Develop By <a href="https://themefisher.com/" target="_blank">Themefisher</a></p>
+            <p class="content">&copy; 2024 - Electivo de PHP &amp;-&amp; Un proyecto por Gerardo Cifuentes y Gabriel Venegas </p>
          </div>
       </div>
    </footer>
