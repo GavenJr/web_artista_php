@@ -16,8 +16,6 @@ include "global/menu.php" ?>
 
     <script src="./src/js/bootstrap/bootstrap.js"></script>
     <script src="./src/js/switch.js"></script>
-    <!-- Enlace a Bootstrap desde un CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Reglas CSS personalizadas */
         .product {
@@ -95,9 +93,6 @@ include "global/menu.php" ?>
             ?>
         </div>
     </div>
-
-    <!-- Enlace a Bootstrap bundle desde un CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         // JavaScript para filtrar productos por categoría
