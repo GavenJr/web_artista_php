@@ -29,6 +29,11 @@ function elMenu()
                             <a href="merch.php" class="nav-link active">Merch</a></li>
                     </ul>
                     <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                        <li class="nav-item col-6 col-lg-auto"><a class="nav-link py-2 px-0 px-lg-2" href="https://www.instagram.com/"
+                                                                  title="Instagram"
+                                                                  target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-instagram"></i><small
+                                        class="d-lg-none ms-2">RSS</small></a></li>
                         <li class="nav-item col-6 col-lg-auto"><a class="nav-link py-2 px-0 px-lg-2" href="/feed"
                                                                   title="RSS"
                                                                   target="_blank" rel="noopener"><i
