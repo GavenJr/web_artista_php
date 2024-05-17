@@ -1,18 +1,26 @@
+<?php
+if (realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"])) {
+    exit;
+}
+include "global/menu.php" ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <title>Merch</title>
     <!-- Enlace al archivo CSS local -->
-    <link rel="stylesheet" href="ruta/a/tu/archivo/styles.css">
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/fontawesome/css/all.min.css">
+
+    <script src="./src/js/bootstrap/bootstrap.js"></script>
+    <script src="./src/js/switch.js"></script>
     <!-- Enlace a Bootstrap desde un CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Reglas CSS personalizadas */
         .product {
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
             border-radius: 5px;
             padding: 15px;
             text-align: center;
@@ -27,12 +35,9 @@
         .product p {
             margin: 0;
             font-size: 16px;
-            color: #212529;
         }
 
         .filters {
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 20px;
@@ -42,55 +47,33 @@
             margin-top: 0;
             margin-bottom: 10px;
             font-size: 18px;
-            color: #212529;
         }
     </style>
 </head>
 <body>
 <main>
-<header class="p-3 text-bg-dark">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <h1>Artistas</h1>
-                </a>
+    <?php echo elMenu(); ?>
 
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="artista.php" class="nav-link px-2 text-white">Artista</a></li>
-                    <li><a href="concierto.php" class="nav-link px-2 text-white">Conciertos</a></li>
-                    <li><a href="./src/blog.php" class="nav-link px-2 text-white">Blog</a></li>
-                    <li><a href="merch.php" class="nav-link px-2 text-white">Merch</a></li>
-                </ul>
-
-                <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-warning">Registrarse</button>
-                </div>
-            </div>
-        </div>
-    </header> 
-
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
             <?php
             // Array de productos de merchandising
             $productos = array(
-                array("Camiseta", "src/img/camiseta.jpg", 20.000, "Ropa"),
-                array("Taza", "src/img/taza.jpg", 10.000, "Vajilla"),
-                array("Gorra", "src/img/gorra.jpg", 15.000, "Accesorios"),
-                array("Llavero", "src/img/llavero.jpg", 5.000, "Accesorios"),
-                array("Póster", "src/img/poster.jpg", 8.000, "Decoración"),
-                array("Mochila", "src/img/mochila.jpg", 30.000, "Accesorios"),
-                array("Parche", "src/img/parche.jpg", 3.000, "Accesorios"),
-                array("Sudadera", "src/img/sudadera.jpg", 35.000, "Ropa")
+                array("Camiseta", "./src/res/img/camiseta.jpg", 20.000, "Ropa"),
+                array("Taza", "./src/res/img/taza.jpg", 10.000, "Vajilla"),
+                array("Gorra", "./src/res/img/gorra.jpg", 15.000, "Accesorios"),
+                array("Llavero", "./src/res/img/llavero.jpg", 5.000, "Accesorios"),
+                array("Póster", "./src/res/img/poster.jpg", 8.000, "Decoración"),
+                array("Mochila", "./src/res/img/mochila.jpg", 30.000, "Accesorios"),
+                array("Parche", "./src/res/img/parche.jpg", 3.000, "Accesorios"),
+                array("Sudadera", "./src/res/img/sudadera.jpg", 35.000, "Ropa")
             );
 
             // Mostrar filtros
             echo '<div class="sidebar">';
-            echo '<div class="filters">';
+            echo '<div class="filters bg-body-tertiary border-light-subtle border rounded">';
             echo '<h2>Filtrar por:</h2>';
-            echo '<select id="categoryFilter">';
+            echo '<select id="categoryFilter" class="form-select" >';
             echo '<option value="">Todos</option>';
             $categorias = array_unique(array_column($productos, 3));
             foreach ($categorias as $categoria) {
@@ -103,7 +86,7 @@
             // Mostrar productos
             foreach ($productos as $producto) {
                 echo '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">';
-                echo '<div class="product" data-category="' . $producto[3] . '">';
+                echo '<div class="product bg-body-tertiary border-light-subtle border rounded" data-category="' . $producto[3] . '">';
                 echo '<img src="' . $producto[1] . '" alt="' . $producto[0] . '" class="img-fluid">';
                 echo '<p>' . $producto[0] . ' - $' . number_format($producto[2], 3) . '</p>';
                 echo '</div>';
