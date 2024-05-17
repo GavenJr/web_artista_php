@@ -39,7 +39,11 @@ include "global/footer.php"; ?>
 </head>
 <body>
     <?php echo elMenu(); ?>
-
+    <div>
+    <br>
+    <h2 class="text-center">Contacto</h2>
+    <br>
+  </div>
 
 
     <?php echo elFooter(); ?>

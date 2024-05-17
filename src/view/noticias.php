@@ -42,29 +42,32 @@ include "global/footer.php"; ?>
 
 <section class="section">
 	<div class="container">
+        <div>
+            <h2 class="">Ultimos blogs</h2>
+            <br>
+        </div>
 		<div class="row">
 			<div class="col-lg-8  mb-5 mb-lg-0">
 				<article class="row mb-5">
 					<div class="col-md-4 mb-4 mb-md-0">
 						<div class="post-slider slider-sm">
 							<img loading="lazy" src="./src//images/post/post-6.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
-							<img loading="lazy" src="./src/images/post/post-1.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
-							<img loading="lazy" src="./src/images/post/post-3.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+							<!-- <img loading="lazy" src="./src/images/post/post-1.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+							<img loading="lazy" src="./src/images/post/post-3.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;"> -->
 						</div>
 					</div>
 					<div class="col-md-8">
-						<h3 class="h5"><a class="post-title" href="post-elements.html">Elements That You Can Use To Create A New
-                        Post On This Template.</a></h3>
+						<h3 class="h5"><a class="post-title" href="post-elements.html">Concierto en Chicago: Todo lo que debes saber.</a></h3>
 						<ul class="list-inline post-meta mb-2">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
 							</li>
-							<li class="list-inline-item">Date : March 15, 2020</li>
-							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Photography </a>
+							<li class="list-inline-item">Fecha : Marzo 15, 2024</li>
+							<li class="list-inline-item">Categorias : <a href="#!" class="ml-1">Musica </a>
 							</li>
-							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Photo </a> ,<a href="#!" class="ml-1">Image </a>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Conciertos </a> ,<a href="#!" class="ml-1">Image </a>
 							</li>
 						</ul>
-						<p>Heading example Here is example of hedings. You can use this heading by following markdownify rules. …</p> <a href="post-elements.html" class="btn btn-outline-primary">Continue Reading</a>
+						<p>Heading example Here is example of hedings. You can use this heading by following markdownify rules. …</p> <a href="post-elements.html" class="btn btn-outline-primary">Continuar leyendo</a>
 					</div>
 				</article>
 				<article class="row mb-5">
@@ -74,40 +77,38 @@ include "global/footer.php"; ?>
 						</div>
 					</div>
 					<div class="col-md-8">
-						<h3 class="h5"><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking
-                        Coffee</a></h3>
+						<h3 class="h5"><a class="post-title" href="post-details-1.html">Horizontes y Oportunidades: Que esperar este 2024 respecto a...</a></h3>
 						<ul class="list-inline post-meta mb-2">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
 							</li>
-							<li class="list-inline-item">Date : March 14, 2020</li>
-							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Photography </a>
+							<li class="list-inline-item">Fecha : Marzo 14, 2024</li>
+							<li class="list-inline-item">Categorias : <a href="#!" class="ml-1">Musica </a>
 							</li>
-							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Photo </a> ,<a href="#!" class="ml-1">Image </a>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Conciertos </a> ,<a href="#!" class="ml-1">Image </a>
 							</li>
 						</ul>
-						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-1.html" class="btn btn-outline-primary">Continue Reading</a>
+						<p>No es ningún secreto que la industria digital está en auge. Desde emocionantes startups hasta marcas globales,...</p> <a href="post-details-1.html" class="btn btn-outline-primary">Continuar leyendo</a>
 					</div>
 				</article>
 				<article class="row mb-5">
 					<div class="col-md-4 mb-4 mb-md-0">
 						<div class="post-slider slider-sm">
 							<img loading="lazy" src="./src/images/post/post-2.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
-							<img loading="lazy" src="./src/images/post/post-4.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+							<!-- <img loading="lazy" src="./src/images/post/post-4.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;"> -->
 						</div>
 					</div>
 					<div class="col-md-8">
-						<h3 class="h5"><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking
-                        Coffee</a></h3>
+						<h3 class="h5"><a class="post-title" href="post-details-2.html">Donde los ojos abundan: Que esperar del nuevo festival y conciertos en...</a></h3>
 						<ul class="list-inline post-meta mb-2">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
 							</li>
-							<li class="list-inline-item">Date : March 14, 2020</li>
-							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Photobooth </a>
+							<li class="list-inline-item">Fecha : Marzo 14, 2024</li>
+							<li class="list-inline-item">Categorias : <a href="#!" class="ml-1">Festivales </a>
 							</li>
-							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Booth </a> ,<a href="#!" class="ml-1">Image </a>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Album </a> ,<a href="#!" class="ml-1">Image </a>
 							</li>
 						</ul>
-						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-2.html" class="btn btn-outline-primary">Continue Reading</a>
+						<p>No es ningún secreto que la industria digital está en auge. Desde emocionantes startups hasta marcas globales,...</p> <a href="post-details-2.html" class="btn btn-outline-primary">Continuar leyendo</a>
 					</div>
 				</article>
 				<article class="row mb-5">
@@ -117,41 +118,39 @@ include "global/footer.php"; ?>
 						</div>
 					</div>
 					<div class="col-md-8">
-						<h3 class="h5"><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking
-                        Coffee</a></h3>
+						<h3 class="h5"><a class="post-title" href="post-details-2.html">Disponibilidad regional y precios internacionales: lo que debes saber</a></h3>
 						<ul class="list-inline post-meta mb-2">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
 							</li>
-							<li class="list-inline-item">Date : March 14, 2020</li>
-							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Videography </a>
+							<li class="list-inline-item">Fecha : Marzo 14, 2024</li>
+							<li class="list-inline-item">Categorias : <a href="#!" class="ml-1">Videoclips </a>
 							</li>
 							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Video </a> ,<a href="#!" class="ml-1">Image </a>
 							</li>
 						</ul>
-						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-2.html" class="btn btn-outline-primary">Continue Reading</a>
+						<p>No es ningún secreto que la industria digital está en auge. Desde emocionantes startups hasta marcas globales,...</p> <a href="post-details-2.html" class="btn btn-outline-primary">Continuar leyendo</a>
 					</div>
 				</article>
 				<article class="row mb-5">
 					<div class="col-md-4 mb-4 mb-md-0">
 						<div class="post-slider slider-sm">
 							<img loading="lazy" src="./src/images/post/post-4.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
-							<img loading="lazy" src="./src/images/post/post-1.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+							<!-- <img loading="lazy" src="./src/images/post/post-1.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;"> -->
 						</div>
 					</div>
 					<div class="col-md-8">
-						<h3 class="h5"><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking
-                        Coffee</a></h3>
+						<h3 class="h5"><a class="post-title" href="post-details-1.html">Lo que el trazo expreso: Como participar del nuevo evento auspiciado...</a></h3>
 						<ul class="list-inline post-meta mb-2">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
 							</li>
-							<li class="list-inline-item">Date : March 14, 2020</li>
-							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Four seasone </a>
+							<li class="list-inline-item">Fecha : Marzo 14, 2024</li>
+							<li class="list-inline-item">Categorias : <a href="#!" class="ml-1">Festival de Viña </a>
 							</li>
-							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Seasone </a>
-								,<a href="#!" class="ml-1">New </a>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Tours </a>
+								,<a href="#!" class="ml-1">Lanzamientos </a>
 							</li>
 						</ul>
-						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-1.html" class="btn btn-outline-primary">Continue Reading</a>
+						<p>No es ningún secreto que la industria digital está en auge. Desde emocionantes startups hasta marcas globales,...</p> <a href="post-details-1.html" class="btn btn-outline-primary">Continuar leyendo</a>
 					</div>
 				</article>
 				<article class="row mb-5">
@@ -161,64 +160,62 @@ include "global/footer.php"; ?>
 						</div>
 					</div>
 					<div class="col-md-8">
-						<h3 class="h5"><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking
-                        Coffee</a></h3>
+						<h3 class="h5"><a class="post-title" href="post-details-1.html">El comienzo de una nueva era: Redefiniendo la cultura del pais una cancion a...</a></h3>
 						<ul class="list-inline post-meta mb-2">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
 							</li>
-							<li class="list-inline-item">Date : March 14, 2020</li>
-							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Newyork city </a>
+							<li class="list-inline-item">Fecha : Marzo 14, 2024</li>
+							<li class="list-inline-item">Categorias : <a href="#!" class="ml-1">Ñuble </a>
 							</li>
-							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">City </a> ,<a href="#!" class="ml-1">Photo </a>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Chillan </a> ,<a href="#!" class="ml-1">Conciertos </a>
 							</li>
 						</ul>
-						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-1.html" class="btn btn-outline-primary">Continue Reading</a>
+						<p>No es ningún secreto que la industria digital está en auge. Desde emocionantes startups hasta marcas globales,...</p> <a href="post-details-1.html" class="btn btn-outline-primary">Continuar leyendo</a>
 					</div>
 				</article>
 				<article class="row mb-5">
 					<div class="col-12">
-						<h3 class="h5"><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking
-                        Coffee</a></h3>
+						<h3 class="h5"><a class="post-title" href="post-details-2.html">Informacion y Actualizaciones importantes para futuros fans</a></h3>
 						<ul class="list-inline post-meta mb-2">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
 							</li>
-							<li class="list-inline-item">Date : March 14, 2020</li>
-							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Newyork city </a>
+							<li class="list-inline-item">Fecha : Marzo 14, 2024</li>
+							<li class="list-inline-item">Categorias : <a href="#!" class="ml-1">Ñuble </a>
 							</li>
-							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">City </a> ,<a href="#!" class="ml-1">Photo </a>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Chillan </a> ,<a href="#!" class="ml-1">Conciertos </a>
 							</li>
 						</ul>
-						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, companies are reaching out to digital agencies, responding to the new possibilities available. However, the industry is fast becoming overcrowded, heaving with agencies offering similar services — on the …</p> <a href="post-details-2.html" class="btn btn-outline-primary">Continue Reading</a>
+						<p>No es ningún secreto que la industria digital está en auge. Desde interesantes startups hasta marcas globales, las empresas se están acercando a las agencias digitales, respondiendo a las nuevas posibilidades disponibles. Sin embargo, la industria se está saturando rápidamente y está repleta de agencias que ofrecen servicios similares...</p> <a href="post-details-2.html" class="btn btn-outline-primary">Continuar leyendo</a>
 					</div>
 				</article>
 			</div>
 			<aside class="col-lg-4">
 				   <!-- Search -->
    <div class="widget">
-      <h5 class="widget-title"><span>Search</span></h5>
+      <h5 class="widget-title"><span>Buscar</span></h5>
       <form action="/logbook-hugo/search" class="widget-search">
          <input id="search-query" name="s" type="search" placeholder="Type &amp; Hit Enter...">
          <button type="submit"><i class="ti-search"></i>
          </button>
       </form>
    </div>
-   <!-- categories -->
+   <!-- Categorias -->
    <div class="widget">
-      <h5 class="widget-title"><span>Categories</span></h5>
+      <h5 class="widget-title"><span>Categorias</span></h5>
       <ul class="list-unstyled widget-list">
-         <li><a href="#!" class="d-flex">Four seasone
+         <li><a href="#!" class="d-flex">Festival de Viña
                <small class="ml-auto">(1)</small></a>
          </li>
-         <li><a href="#!" class="d-flex">Newyork city
+         <li><a href="#!" class="d-flex">Ñuble
                <small class="ml-auto">(2)</small></a>
          </li>
-         <li><a href="#!" class="d-flex">Photobooth
+         <li><a href="#!" class="d-flex">Festivales
                <small class="ml-auto">(1)</small></a>
          </li>
-         <li><a href="#!" class="d-flex">Photography
+         <li><a href="#!" class="d-flex">Musica
                <small class="ml-auto">(2)</small></a>
          </li>
-         <li><a href="#!" class="d-flex">Videography
+         <li><a href="#!" class="d-flex">Videoclips
                <small class="ml-auto">(1)</small></a>
          </li>
       </ul>
@@ -227,17 +224,17 @@ include "global/footer.php"; ?>
    <div class="widget">
       <h5 class="widget-title"><span>Tags</span></h5>
       <ul class="list-inline widget-list-inline">
-         <li class="list-inline-item"><a href="#!">Booth</a>
+         <li class="list-inline-item"><a href="#!">Album</a>
          </li>
-         <li class="list-inline-item"><a href="#!">City</a>
+         <li class="list-inline-item"><a href="#!">Chillan</a>
          </li>
          <li class="list-inline-item"><a href="#!">Image</a>
          </li>
-         <li class="list-inline-item"><a href="#!">New</a>
+         <li class="list-inline-item"><a href="#!">Lanzamientos</a>
          </li>
-         <li class="list-inline-item"><a href="#!">Photo</a>
+         <li class="list-inline-item"><a href="#!">Conciertos</a>
          </li>
-         <li class="list-inline-item"><a href="#!">Seasone</a>
+         <li class="list-inline-item"><a href="#!">Tours</a>
          </li>
          <li class="list-inline-item"><a href="#!">Video</a>
          </li>
@@ -245,7 +242,7 @@ include "global/footer.php"; ?>
    </div>
    <!-- latest post -->
    <div class="widget">
-      <h5 class="widget-title"><span>Latest Article</span></h5>
+      <h5 class="widget-title"><span>Ultimos articulos</span></h5>
       <!-- post-item -->
       <ul class="list-unstyled widget-list">
          <li class="media widget-post align-items-center">
@@ -253,9 +250,8 @@ include "global/footer.php"; ?>
                <img loading="lazy" class="mr-3" src="./src/images/post/post-6.jpg">
             </a>
             <div class="media-body">
-               <h5 class="h6 mb-0"><a href="post-elements.html">Elements That You Can Use To Create A New Post On
-                     This Template.</a></h5>
-               <small>March 15, 2020</small>
+               <h5 class="h6 mb-0"><a href="post-elements.html">Concierto en Chicago: Todo lo que debes saber.</a></h5>
+               <small>Marzo 15, 2024</small>
             </div>
          </li>
       </ul>
@@ -265,9 +261,9 @@ include "global/footer.php"; ?>
                <img loading="lazy" class="mr-3" src="./src/images/post/post-1.jpg">
             </a>
             <div class="media-body">
-               <h5 class="h6 mb-0"><a href="post-details-1.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+               <h5 class="h6 mb-0"><a href="post-details-1.html">Horizontes y Oportunidades: Que esperar este 2024 respecto a...</a>
                </h5>
-               <small>March 14, 2020</small>
+               <small>Marzo 14, 2024</small>
             </div>
          </li>
       </ul>
@@ -277,9 +273,9 @@ include "global/footer.php"; ?>
                <img loading="lazy" class="mr-3" src="./src/images/post/post-2.jpg">
             </a>
             <div class="media-body">
-               <h5 class="h6 mb-0"><a href="post-details-2.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+               <h5 class="h6 mb-0"><a href="post-details-2.html">Donde los ojos abundan: Que esperar del nuevo festival y conciertos en...</a>
                </h5>
-               <small>March 14, 2020</small>
+               <small>Marzo 14, 2024</small>
             </div>
          </li>
       </ul>

@@ -40,6 +40,11 @@ include "global/footer.php"; ?>
 <body>
 <?php echo elMenu(); ?>
 <main>
+<div>
+    <br>
+    <h2 class="text-center">Acerca del artista</h2>
+    <br>
+  </div>
     <div class="container mt-4">
 
         <p>Nacido en el año 1889, Artista Genérico emergió como una figura multifacética en el mundo del arte,
