@@ -1,0 +1,293 @@
+<?php
+if (realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"])) {
+    exit;
+}
+include "global/menu.php";
+include "global/footer.php"; ?>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/fontawesome/css/all.min.css">
+
+    <script src="./src/js/bootstrap/bootstrap.js"></script>
+    <script src="./src/js/switch.js"></script>
+
+    <link rel="stylesheet" href="./src/css/sign-in.css">
+
+   <!-- plugins -->
+   <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2" style="font-display: optional;">
+   <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap" media="screen">
+
+   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+   <link rel="stylesheet" href="plugins/slick/slick.css">
+
+   <!-- Main Stylesheet -->
+   <link rel="stylesheet" href="./src/css/style.css">
+
+   <!--Favicon-->
+   <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+   <link rel="icon" href="./src/images/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <?php echo elMenu(); ?>
+
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8  mb-5 mb-lg-0">
+				<article class="row mb-5">
+					<div class="col-md-4 mb-4 mb-md-0">
+						<div class="post-slider slider-sm">
+							<img loading="lazy" src="./src//images/post/post-6.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+							<img loading="lazy" src="./src/images/post/post-1.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+							<img loading="lazy" src="./src/images/post/post-3.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3 class="h5"><a class="post-title" href="post-elements.html">Elements That You Can Use To Create A New
+                        Post On This Template.</a></h3>
+						<ul class="list-inline post-meta mb-2">
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							</li>
+							<li class="list-inline-item">Date : March 15, 2020</li>
+							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Photography </a>
+							</li>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Photo </a> ,<a href="#!" class="ml-1">Image </a>
+							</li>
+						</ul>
+						<p>Heading example Here is example of hedings. You can use this heading by following markdownify rules. …</p> <a href="post-elements.html" class="btn btn-outline-primary">Continue Reading</a>
+					</div>
+				</article>
+				<article class="row mb-5">
+					<div class="col-md-4 mb-4 mb-md-0">
+						<div class="post-slider slider-sm">
+							<img loading="lazy" src="./src/images/post/post-1.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3 class="h5"><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking
+                        Coffee</a></h3>
+						<ul class="list-inline post-meta mb-2">
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							</li>
+							<li class="list-inline-item">Date : March 14, 2020</li>
+							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Photography </a>
+							</li>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Photo </a> ,<a href="#!" class="ml-1">Image </a>
+							</li>
+						</ul>
+						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-1.html" class="btn btn-outline-primary">Continue Reading</a>
+					</div>
+				</article>
+				<article class="row mb-5">
+					<div class="col-md-4 mb-4 mb-md-0">
+						<div class="post-slider slider-sm">
+							<img loading="lazy" src="./src/images/post/post-2.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+							<img loading="lazy" src="./src/images/post/post-4.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3 class="h5"><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking
+                        Coffee</a></h3>
+						<ul class="list-inline post-meta mb-2">
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							</li>
+							<li class="list-inline-item">Date : March 14, 2020</li>
+							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Photobooth </a>
+							</li>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Booth </a> ,<a href="#!" class="ml-1">Image </a>
+							</li>
+						</ul>
+						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-2.html" class="btn btn-outline-primary">Continue Reading</a>
+					</div>
+				</article>
+				<article class="row mb-5">
+					<div class="col-md-4 mb-4 mb-md-0">
+						<div class="post-slider slider-sm">
+							<img loading="lazy" src="./src/images/post/post-3.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3 class="h5"><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking
+                        Coffee</a></h3>
+						<ul class="list-inline post-meta mb-2">
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							</li>
+							<li class="list-inline-item">Date : March 14, 2020</li>
+							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Videography </a>
+							</li>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Video </a> ,<a href="#!" class="ml-1">Image </a>
+							</li>
+						</ul>
+						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-2.html" class="btn btn-outline-primary">Continue Reading</a>
+					</div>
+				</article>
+				<article class="row mb-5">
+					<div class="col-md-4 mb-4 mb-md-0">
+						<div class="post-slider slider-sm">
+							<img loading="lazy" src="./src/images/post/post-4.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+							<img loading="lazy" src="./src/images/post/post-1.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3 class="h5"><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking
+                        Coffee</a></h3>
+						<ul class="list-inline post-meta mb-2">
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							</li>
+							<li class="list-inline-item">Date : March 14, 2020</li>
+							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Four seasone </a>
+							</li>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Seasone </a>
+								,<a href="#!" class="ml-1">New </a>
+							</li>
+						</ul>
+						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-1.html" class="btn btn-outline-primary">Continue Reading</a>
+					</div>
+				</article>
+				<article class="row mb-5">
+					<div class="col-md-4 mb-4 mb-md-0">
+						<div class="post-slider slider-sm">
+							<img loading="lazy" src="./src/images/post/post-5.jpg" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3 class="h5"><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking
+                        Coffee</a></h3>
+						<ul class="list-inline post-meta mb-2">
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							</li>
+							<li class="list-inline-item">Date : March 14, 2020</li>
+							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Newyork city </a>
+							</li>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">City </a> ,<a href="#!" class="ml-1">Photo </a>
+							</li>
+						</ul>
+						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, …</p> <a href="post-details-1.html" class="btn btn-outline-primary">Continue Reading</a>
+					</div>
+				</article>
+				<article class="row mb-5">
+					<div class="col-12">
+						<h3 class="h5"><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking
+                        Coffee</a></h3>
+						<ul class="list-inline post-meta mb-2">
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							</li>
+							<li class="list-inline-item">Date : March 14, 2020</li>
+							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Newyork city </a>
+							</li>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">City </a> ,<a href="#!" class="ml-1">Photo </a>
+							</li>
+						</ul>
+						<p>It’s no secret that the digital industry is booming. From exciting startups to global brands, companies are reaching out to digital agencies, responding to the new possibilities available. However, the industry is fast becoming overcrowded, heaving with agencies offering similar services — on the …</p> <a href="post-details-2.html" class="btn btn-outline-primary">Continue Reading</a>
+					</div>
+				</article>
+			</div>
+			<aside class="col-lg-4">
+				   <!-- Search -->
+   <div class="widget">
+      <h5 class="widget-title"><span>Search</span></h5>
+      <form action="/logbook-hugo/search" class="widget-search">
+         <input id="search-query" name="s" type="search" placeholder="Type &amp; Hit Enter...">
+         <button type="submit"><i class="ti-search"></i>
+         </button>
+      </form>
+   </div>
+   <!-- categories -->
+   <div class="widget">
+      <h5 class="widget-title"><span>Categories</span></h5>
+      <ul class="list-unstyled widget-list">
+         <li><a href="#!" class="d-flex">Four seasone
+               <small class="ml-auto">(1)</small></a>
+         </li>
+         <li><a href="#!" class="d-flex">Newyork city
+               <small class="ml-auto">(2)</small></a>
+         </li>
+         <li><a href="#!" class="d-flex">Photobooth
+               <small class="ml-auto">(1)</small></a>
+         </li>
+         <li><a href="#!" class="d-flex">Photography
+               <small class="ml-auto">(2)</small></a>
+         </li>
+         <li><a href="#!" class="d-flex">Videography
+               <small class="ml-auto">(1)</small></a>
+         </li>
+      </ul>
+   </div>
+   <!-- tags -->
+   <div class="widget">
+      <h5 class="widget-title"><span>Tags</span></h5>
+      <ul class="list-inline widget-list-inline">
+         <li class="list-inline-item"><a href="#!">Booth</a>
+         </li>
+         <li class="list-inline-item"><a href="#!">City</a>
+         </li>
+         <li class="list-inline-item"><a href="#!">Image</a>
+         </li>
+         <li class="list-inline-item"><a href="#!">New</a>
+         </li>
+         <li class="list-inline-item"><a href="#!">Photo</a>
+         </li>
+         <li class="list-inline-item"><a href="#!">Seasone</a>
+         </li>
+         <li class="list-inline-item"><a href="#!">Video</a>
+         </li>
+      </ul>
+   </div>
+   <!-- latest post -->
+   <div class="widget">
+      <h5 class="widget-title"><span>Latest Article</span></h5>
+      <!-- post-item -->
+      <ul class="list-unstyled widget-list">
+         <li class="media widget-post align-items-center">
+            <a href="post-elements.html">
+               <img loading="lazy" class="mr-3" src="./src/images/post/post-6.jpg">
+            </a>
+            <div class="media-body">
+               <h5 class="h6 mb-0"><a href="post-elements.html">Elements That You Can Use To Create A New Post On
+                     This Template.</a></h5>
+               <small>March 15, 2020</small>
+            </div>
+         </li>
+      </ul>
+      <ul class="list-unstyled widget-list">
+         <li class="media widget-post align-items-center">
+            <a href="post-details-1.html">
+               <img loading="lazy" class="mr-3" src="./src/images/post/post-1.jpg">
+            </a>
+            <div class="media-body">
+               <h5 class="h6 mb-0"><a href="post-details-1.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+               </h5>
+               <small>March 14, 2020</small>
+            </div>
+         </li>
+      </ul>
+      <ul class="list-unstyled widget-list">
+         <li class="media widget-post align-items-center">
+            <a href="post-details-2.html">
+               <img loading="lazy" class="mr-3" src="./src/images/post/post-2.jpg">
+            </a>
+            <div class="media-body">
+               <h5 class="h6 mb-0"><a href="post-details-2.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+               </h5>
+               <small>March 14, 2020</small>
+            </div>
+         </li>
+      </ul>
+   </div>
+			</aside>
+		</div>
+	</div>
+</section>
+
+    <?php echo elFooter(); ?>
+</body>

@@ -17,17 +17,23 @@ function elMenu()
                             class="menu-item">
                             <a href="index" class="nav-link active">Inicio</a></li>
                         <li
-                                class="menu-item">
-                            <a href="acerca" class="nav-link active">Acerca de</a></li>
+                            class="menu-item">
+                        <a href="blog" class="nav-link active">Blog</a></li>
                         <li
                                 class="menu-item">
                             <a href="concierto" class="nav-link active">Conciertos</a></li>
                         <li
                                 class="menu-item">
-                            <a href="blog" class="nav-link active">Blog</a></li>
+                            <a href="merch" class="nav-link active">Merch</a></li>
+                        <li
+                            class="menu-item">
+                        <a href="noticias" class="nav-link active">Noticias</a></li>
+                        <li
+                            class="menu-item">
+                        <a href="contacto" class="nav-link active">contacto</a></li>
                         <li
                                 class="menu-item">
-                            <a href="merch" class="nav-link active">Merch</a></li>
+                            <a href="acerca" class="nav-link active">Acerca de</a></li>
                     </ul>
                     <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
                         <li class="nav-item col-6 col-lg-auto"><a class="nav-link py-2 px-0 px-lg-2" href="https://www.instagram.com/"
