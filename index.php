@@ -21,83 +21,257 @@ include "./src/view/global/menu.php";
 </head>
 <body>
 <main>
-    <?php /*include 'header.php';*/?>
-  <?php  echo elMenu(); ?>
+    <?php /*include 'header.php';*/ ?>
+    <?php echo elMenu(); ?>
 
 
-
-
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <?php for ($i = 0; $i < 3; $i++) { ?>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="<?php echo $i; ?>" <?php echo ($i === 0 ? "class='active' aria-current='true'" : ""); ?> aria-label="Slide <?php echo $i + 1; ?>"></button>
-            <?php } ?>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <?php
-            $carruselItems = array(
-                array("title" => "Ñublense", "subtitle" => "Alista su concierto para las próximas horas.", "buttonText" => "Ver más"),
-                array("title" => "Ñublense", "subtitle" => "Prepara su nuevo disco.", "buttonText" => "Ver más"),
-                array("title" => "Ñublense", "subtitle" => "Lanza nuevo Merch para la gira.", "buttonText" => "Ver más")
-            );
-
-            foreach ($carruselItems as $index => $item) {
-                ?>
-                <div class="carousel-item <?php echo ($index === 0 ? "active" : ""); ?>">
-                    <img class="bd-placeholder-img" src="src/img/artista.png" height="100%" width="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <div class="container">
-                        <div class="carousel-caption <?php echo ($index === 2 ? "text-end" : "text-start"); ?>">
-                            <h1><?php echo $item['title']; ?></h1>
-                            <p class="opacity-75"><?php echo $item['subtitle']; ?></p>
-                            <p><a class="btn btn-lg btn-primary" href="#"><?php echo $item['buttonText']; ?></a></p>
-                        </div>
-                    </div>
-                </div>
-            <?php } ?>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Volver</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Avanzar</span>
-        </button>
-    </div>
-    <div>
-        <br></br>
-    </div>
-    <div class="row align-items-center justify-content-center">
-        <?php
-        $noticias = array(
-            array("title" => "Noticia 1", "content" => "Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1"),
-            array("title" => "Noticia 2", "content" => "Contenido de la Noticia 2Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1Contenido de la Noticia 1"),
-        );
-
-        foreach ($noticias as $index => $noticia) {
-            ?>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><?php echo $noticia['title']; ?></h5>
-                        <p class="card-text"><?php echo $noticia['content']; ?></p>
-                    </div>
+            <div class="carousel-item active">
+                <img src="./src/res/img/artistagenerico.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-light ">
+                    <h5 style="text-shadow: 0px 0px 6px #000000;">¡Llegó a Santiago!</h5>
+                    <p style="text-shadow: 0px 0px 6px #000000;">Nuestro artista llegó a Santiago para su concierto en
+                        el Movistar Arena.</p>
                 </div>
             </div>
-        <?php } ?>
-        <div>
-            <br></br>
+            <div class="carousel-item">
+                <img src="./src/res/img/artistagenerico.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-light ">
+                    <h5 style="text-shadow: 0px 0px 6px #000000;">¡Llegó a Concepción!</h5>
+                    <p style="text-shadow: 0px 0px 6px #000000;">Nuestro artista llegó a Santiago para su concierto en
+                        el Teatro de la UdeC.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./src/res/img/artistagenerico.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-light ">
+                    <h5 style="text-shadow: 0px 0px 6px #000000;">¡Llegó a Chillán!</h5>
+                    <p style="text-shadow: 0px 0px 6px #000000;">Nuestro artista llegó a Santiago para su concierto en
+                        el Teatro Municipal.</p>
+                </div>
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <script>
-        $(document).ready(function() {
-            $('myCarousel').carousel({
-                interval: 4000
-            });
-        });
-    </script>
 
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="position-relative">
+                    <img src="./src/res/img/micro.jpg" class="img-fluid" alt="Imagen">
+                    <span class="badge text-bg-secondary badge-primary badge-pill position-absolute"
+                          style="top: 10px; right: 10px;">Novedades</span>
+                </div>
+                <div class="mt-3">
+                    <h5>Novedades</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla risus sit amet nunc
+                        accumsan, vel euismod ipsum convallis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 </html>
