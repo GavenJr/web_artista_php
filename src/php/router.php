@@ -27,6 +27,9 @@ switch ($request) {
     case 'contacto':
         require './src/view/contacto.php';
         exit();
+    case 'recuperar':
+        require './src/view/recuperar.php';
+        exit();
     case 'crear_blog':
         require './src/view/blog_post.php';
         exit();

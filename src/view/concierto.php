@@ -3,8 +3,8 @@ if (realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"])) {
     exit;
 }
 
-include "global/menu.php"
-?>
+include "global/menu.php";
+include "global/footer.php"; ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -309,6 +309,7 @@ include "global/menu.php"
         });
     </script>
 
+<?php echo elFooter(); ?>
 
 </main>
 </body>
