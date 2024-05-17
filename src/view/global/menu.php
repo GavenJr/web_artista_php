@@ -24,7 +24,7 @@ function elMenu()
                             <a href="concierto" class="nav-link active">Conciertos</a></li>
                         <li
                                 class="menu-item">
-                            <a href="./src/view/blog.php" class="nav-link active">Blog</a></li>
+                            <a href="blog" class="nav-link active">Blog</a></li>
                         <li
                                 class="menu-item">
                             <a href="merch" class="nav-link active">Merch</a></li>
