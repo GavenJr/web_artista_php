@@ -21,6 +21,12 @@ switch ($request) {
     case 'blog':
         require './src/view/blog.php';
         exit();
+    case 'crear_blog':
+        require './src/view/blog_post.php';
+        exit();
+    case 'procesar_blog':
+        require './src/php/blog_post_process.php';
+        exit(); 
     case 'merch':
         require './src/view/merch.php';
         exit();

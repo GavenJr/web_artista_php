@@ -1,25 +1,34 @@
+<?php
+if (realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"])) {
+    exit;
+}
+
+include "global/menu.php";
+include "global/footer.php";
+include "global/blog_functions.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <title>Blog</title>
 
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/fontawesome/css/all.min.css">
 
-    <script src="../js/bootstrap/bootstrap.js"></script>
+    <script src="./src/js/bootstrap/bootstrap.js"></script>
+    <script src="./src/js/switch.js"></script>
+    <script src="./src/js/blog_script.js"></script>
 
-    <link rel="stylesheet" href="../css/sign-in.css">
-
-    <link rel="stylesheet" href="../css/blog_style.css">
+    <link rel="stylesheet" href="./src/css/sign-in.css">
+    <link rel="stylesheet" href="./src/css/blog_style.css">
 
 </head>
 
   <body>
 
-    <?php include '../view/global/header_1.php';?>
-    <h1>Blog</h1>
-    <?php include '../view/global/header_2.php';?>
+    <?php  echo elMenu(); ?>
 
     <br>
 
@@ -39,7 +48,9 @@
 
       if($conn->connect_error) die("Connection Error" . $conn->connect_error);
 
-      $sql = "select id, titulo, fecha, img_file, parrafo, usuario_id from blog;";
+      $sql = "SELECT `blog`.`id`, `blog`.`titulo`, `blog`.`fecha`, `blog`.`parrafo`, `blog`.`usuario_id`, `blog_images`.`img_name`
+      FROM `blog` 
+        LEFT JOIN `blog_images` ON `blog_images`.`blog_id` = `blog`.`id`;";
 
       $result = $conn->query($sql);
 
@@ -53,9 +64,8 @@
 
           echo "<span id='displayDate'>" . $row["fecha"] . "</span><br><br>";
 
-          // echo "<img style='width: 100%; height: auto' id='displayImage' src='img/" . $row["img_file"] . "'><br>";
+          echo "<img style='width: 160px; height: auto' id='displayImage' src='./src/res/img/" . $row["img_name"] . "'><br>";
           // echo "<img style='width: 100%; height: auto' id='displayImage' src='data:image/jpeg;base64,<?php echo base64_encode(" . $row["img_file"] . "); ? >' /> ";
-          echo "<img style='width: 100%; height: auto' id='displayImage' src='getImage.php?id=".$row["id"]."' />";
 
           echo "<p style='overflow: hidden; display: -webkit-box; -webkit-line-clamp: 10; line-clamp: 10; -webkit-box-orient: vertical;' id='displayPara'>" . $row["parrafo"] . "</p><br>";
           
@@ -65,7 +75,7 @@
       
       else
       {
-        echo "<center><span>No Blog Posts Found</span></center>";
+        echo "";
       
         // echo "<center><a style='color: dodgerblue;' href='./blog_post.php'>Write a New Post</a></center>";
       }
@@ -76,7 +86,7 @@
 
     </div>
 
-    <?php echo "<br><center><a style='color: dodgerblue; text-decoration: none; background: dodgerblue; padding: 5px 25px; color: #fff; border-radius: 50px;' href='./blog_post.php'>Write a New Post</a></center><br>"; ?>
+    <?php echo menuNuevoBlog(); ?>
 
   </body>
   

@@ -34,7 +34,7 @@ function elMenu()
                                                                   title="Instagram"
                                                                   target="_blank" rel="noopener"><i
                                         class="fa-brands fa-instagram"></i><small
-                                        class="d-lg-none ms-2">Instagram</small></a></li>
+                                        class="d-lg-none ms-2">RSS</small></a></li>
                         <li class="nav-item col-6 col-lg-auto"><a class="nav-link py-2 px-0 px-lg-2" href="/feed"
                                                                   title="RSS"
                                                                   target="_blank" rel="noopener"><i
