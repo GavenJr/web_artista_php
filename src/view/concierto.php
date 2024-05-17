@@ -23,8 +23,15 @@ include "global/menu.php"
 <body>
 <?php echo elMenu(); ?>
 <main>
+
+
     <div class="container mt-4">
-        <div class="mb-5" style="max-width: 800px;margin:0 auto">
+        <div class="col-md-4">
+            <label for="filter-lives">Filtrar los conciertos</label>
+            <input type="text" class="form-control mb-5" id="filter-lives" placeholder="Filtrar">
+        </div>
+
+        <div class="concierto mb-5" style="max-width: 800px;margin:0 auto">
             <h2 class="mb-3">Concierto 1</h2>
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action">
@@ -104,7 +111,7 @@ include "global/menu.php"
                 </a>
             </div>
         </div>
-        <div class="mb-4" style="max-width: 800px;margin:0 auto">
+        <div class="concierto mb-5" style="max-width: 800px;margin:0 auto">
             <h2 class="mb-3">Concierto 2: la repetición</h2>
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action">
@@ -184,7 +191,7 @@ include "global/menu.php"
                 </a>
             </div>
         </div>
-        <div class="mb-5" style="max-width: 800px;margin:0 auto">
+        <div class="concierto mb-5" style="max-width: 800px;margin:0 auto">
             <h2 class="mb-3">Concierto 3: la despedida</h2>
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action">
@@ -265,6 +272,25 @@ include "global/menu.php"
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var searchBox = document.getElementById("filter-lives");
+            searchBox.addEventListener("input", function () {
+                var searchText = searchBox.value.toLowerCase();
+                var divs = document.getElementsByClassName("concierto");
+                for (var i = 0; i < divs.length; i++) {
+                    var div = divs[i];
+                    var h2 = div.querySelector("h2");
+                    if (h2.textContent.toLowerCase().includes(searchText)) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                }
+            });
+        });
+    </script>
 
 
 </main>
