@@ -3,7 +3,6 @@ $requestUri = $_SERVER['REQUEST_URI'];
 $scriptName = $_SERVER['SCRIPT_NAME'];
 $baseUri = str_replace(basename($scriptName), '', $scriptName);
 $request = trim(str_replace($baseUri, '', $requestUri), '/');
-echo "<script>console.log('Debug Objects: " . $request . "' );</script>";
 
 // Enrutamiento
 switch ($request) {
