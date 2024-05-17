@@ -9,7 +9,7 @@ include "global/menu.php" ?>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proyecto</title>
+        <title>Página de un Artista</title>
 
         <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.css">
         <link rel="stylesheet" href="./src/css/fontawesome/css/all.min.css">
