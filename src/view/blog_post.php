@@ -15,6 +15,9 @@ include "global/blog_functions.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear blog</title>
 
+    <link rel="stylesheet" href="./src/css/sign-in.css">
+    <link rel="stylesheet" href="./src/css/blog_style.css">
+
     <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./src/css/fontawesome/css/all.min.css">
 
@@ -22,7 +25,21 @@ include "global/blog_functions.php";
     <script src="./src/js/switch.js"></script>
 
     <link rel="stylesheet" href="./src/css/sign-in.css">
-    <link rel="stylesheet" href="./src/css/blog_style.css">
+
+   <!-- plugins -->
+   <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2" style="font-display: optional;">
+   <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap" media="screen">
+
+   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+   <link rel="stylesheet" href="plugins/slick/slick.css">
+
+   <!-- Main Stylesheet -->
+   <link rel="stylesheet" href="./src/css/style.css">
+
+   <!--Favicon-->
+   <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+   <link rel="icon" href="./src/images/favicon.png" type="image/x-icon">
 
 </head>
 
@@ -31,6 +48,11 @@ include "global/blog_functions.php";
 
   <?php  echo elMenu(); ?>
   <br>
+  <div>
+    <br>
+    <h2 class="text-center">Crear un nuevo blog</h2>
+    <br>
+  </div>
 
     <div class="writing-section">
 
@@ -67,6 +89,8 @@ include "global/blog_functions.php";
     </div>
 
     <script src="./src/js/blog_script.js"></script>
+
+    <?php echo elFooter(); ?>
 
   </body>
   

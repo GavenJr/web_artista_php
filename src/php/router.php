@@ -30,5 +30,8 @@ switch ($request) {
     case 'merch':
         require './src/view/merch.php';
         exit();
+    case 'test1':
+        require './templates/logbook-bootstrap-main/theme/index-list-right.html';
+        exit();
 
 }
