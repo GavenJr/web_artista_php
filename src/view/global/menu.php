@@ -12,7 +12,7 @@ function elMenu()
                 </button>
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul id="menu-menu-principal" class="navbar-nav me-auto mb-2 mb-md-0 ">
-                        <img src="./src/res/img/icono.png" alt="Bootstrap" width="50" class="me-3">
+                        <a href="index"><img src="./src/res/img/icono.png" alt="Bootstrap" width="50" class="me-3"></a>
                         <li
                             class="menu-item">
                             <a href="index" class="nav-link active">Inicio</a></li>
