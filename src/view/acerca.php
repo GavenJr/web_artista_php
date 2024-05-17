@@ -1,4 +1,8 @@
-<?php include "global/menu.php" ?>
+<?php
+if (realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"])) {
+    exit;
+}
+include "global/menu.php" ?>
 
 <!DOCTYPE html>
 <html lang="es">
