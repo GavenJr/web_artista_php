@@ -6,8 +6,9 @@ $request = trim(str_replace($baseUri, '', $requestUri), '/');
 
 // Enrutamiento
 switch ($request) {
+    case '';
     case 'index':
-        require './index.php';
+        require './src/view/home.php';
         exit();
     case 'concierto':
         require './src/view/concierto.php';
